@@ -1,0 +1,63 @@
+*{
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+		body{
+			text-align: center;
+		}
+		h1{
+			padding-top: 30px;
+			font-size: 30px;
+			color: blue;
+			
+		}
+		#imagen{
+			position: relative;
+		}
+		#imagenfondo{
+			opacity: 0.2;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: t;
+			margin: auto;
+			width: 1000px;
+		}
+
+		#imagenpersonaje{
+			padding-top: 25px;
+			opacity: 1;
+			color: blue;
+			font-weight: bold;
+		}
+
+		#respuesta{
+			position: relative;
+			padding-top: 20px;
+		}
+
+		.fotoperro:hover{
+			border: 5px solid blue;
+			cursor: pointer;
+		}
+
+		figure{
+			display: inline-block;
+			font-weight: bold;
+		}
+		#boton{
+			text-align: center;
+			font-weight: bold;
+			position: relative;
+			margin-top: 50px;
+
+		}
+		a{
+			color: black;
+			background-color: green;
+			padding: 20px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+		}

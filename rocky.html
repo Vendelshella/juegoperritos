@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juego Perritos Patrulla Canina</title>
+	<link rel="stylesheet" type="text/css" href="hojaestilosperritos.css">
+	<style type="text/css">
+		#imagenpersonaje{
+			color: green;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var imagenes=document.querySelectorAll("#respuesta figure img");
+			for (i=0;i<imagenes.length;i++){
+				imagenes[i].addEventListener("click",respuesta,false);
+			}
+				});
+		function respuesta(num){
+			if(num.target==imagen1){
+				$('#imagen1').replaceWith('<img id="imagen1" src="img/bulldogingleserror.jpg" width="150px">');
+			}
+			if(num.target==imagen2){
+				$('#imagen2').replaceWith('<img id="imagen2" src="img/cockerspanielerror.jpg" width="175px">');
+			}
+			if(num.target==imagen3){
+				$('#imagen3').replaceWith('<img id="imagen3" src="img/perromestizotic.jpg" width="140px">');
+			}
+		
+		}
+	</script>
+</head>
+<body>
+	<div id="imagen">
+		<img id="imagenfondo" src="img/fotofondo.jpg">
+	</div>
+	<h1>¿Qué perrito es...?</h1>
+
+	<figure id="imagenpersonaje"><img width="200px" src="img/rocky.jpg"><figcaption>ROCKY</figcaption></figure>
+	<div id="respuesta">
+		<figure><img class="fotoperro" id="imagen1" src="img/bulldogingles.jpg" width="150px"><figcaption>BULL DOG</figcaption></figure>
+		<figure><img class="fotoperro" id="imagen2" src="img/cockerspaniel.jpg" width="175px"><figcaption>COCKER</figcaption></figure>
+		<figure><img class="fotoperro" id="imagen3" src="img/perromestizo.jpg" width="140px"><figcaption>PERRO MESTIZO</figcaption></figure>		
+	</div>
+
+	<div id="boton"><a target="_blank" href="file:///C:/Users/Sonia/Desktop/juegoperritos/rubble.html">Siguiente perrito</a></div>
+
+</body>
+</html>
